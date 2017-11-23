@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 #app {
   max-width: 80vw;
   margin: auto; }
@@ -5,7 +8,19 @@
 .beer {
   padding: 10px;
   box-shadow: 2px 2px 5px 5px rgba(200, 200, 200, 0.2); }
-  .beer img {
-    float: right; }
+
+.beer-info {
+  float: left; }
+
+.beer-pic {
+  max-height: 150px; }
+
+.pic-koozie {
+  width: 20vh;
+  float: right;
+  text-align: center; }
+
+.clearfix {
+  clear: both; }
 
 /*# sourceMappingURL=main.css.map */

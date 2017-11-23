@@ -10,9 +10,14 @@
     <h1>The Master List</h1>
     <div id="app">
       <div class="beer" v-for="beer in beers">
-        <img v-if="beer.image" alt="beer.image_alt">
-        <h2>{{ beer.name }}</h2>
-        <small>{{ beer.year }}</small>
+        <div class="beer-info">
+          <h2>{{ beer.name }}</h2>
+          <small>{{ beer.year }}</small>
+        </div>
+        <div class="pic-koozie">
+          <img class="beer-pic" v-if="beer.image" v-bind:src="beer.image">
+        </div>
+        <div class="clearfix"></div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
