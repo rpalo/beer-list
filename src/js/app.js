@@ -8,7 +8,15 @@ var beers = [
 var app = new Vue({
   el: "#app",
   data: {
-    beers
+    beers: beers,
+    search: ""
+  },
+  computed: {
+    filteredBeers() {
+      return this.beers.filter(beer => {
+        return beer.name.toLowerCase().includes(this.search.toLowerCase());
+      });
+    }
   }
 });
 

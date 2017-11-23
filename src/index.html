@@ -9,7 +9,12 @@
   <body>
     <h1>The Master List</h1>
     <div id="app">
-      <div class="beer" v-for="beer in beers">
+
+      <div class="search-wrapper">
+        <input class="search" v-model="search" placeholder="Search...">
+      </div>
+
+      <div class="beer" v-for="beer in filteredBeers">
         <div class="beer-info">
           <h2>{{ beer.name }}</h2>
           <small>{{ beer.year }}</small>
