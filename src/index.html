@@ -16,6 +16,12 @@
         <input class="search" v-model="search" placeholder="Search...">
       </div>
 
+      <div class="filter-wrapper">
+        <p>Filter by: </p>
+        <button class="button by-name" v-on:click="filterByName">Name</button>
+        <button class="button by-year" v-on:click="filterByYear">Year</button>
+      </div>
+
       <div class="beer" v-for="beer in filteredBeers">
         <div class="beer-info">
           <h2>{{ beer.name }}</h2>

@@ -17,6 +17,22 @@ var app = new Vue({
         return beer.name.toLowerCase().includes(this.search.toLowerCase());
       });
     }
+  },
+  methods: {
+    filterByName() {
+      this.beers.sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+    },
+    filterByYear() {
+      this.beers.sort((a, b) => {
+        return a.year - b.year;
+      });
+    }
   }
 });
 
