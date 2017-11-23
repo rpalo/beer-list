@@ -67,6 +67,19 @@ h2 {
   font-size: 1.5rem;
   margin: auto; }
 
+.filter-wrapper {
+  text-align: center;
+  margin: 20px; }
+
+.button {
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 5px solid #700a0a;
+  color: #555; }
+
 .beer {
   padding: 15px;
   box-shadow: 2px 2px 10px 0px rgba(150, 150, 150, 0.4);
