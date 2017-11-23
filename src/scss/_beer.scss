@@ -1,0 +1,25 @@
+.beer {
+  padding: 15px;
+  box-shadow: 2px 2px 10px 0px rgba(150, 150, 150, .4);
+  background-color: $white;
+  margin: 30px;
+  border-radius: 3px;
+}
+
+.beer-info {
+  float: left;
+}
+
+.beer-pic {
+  max-height: 150px;
+}
+
+.pic-koozie {
+  width: 20vh;
+  float: right;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}

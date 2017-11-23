@@ -1,6 +1,9 @@
 @import 'reset';
 @import 'typography';
 @import 'colors';
+@import 'search';
+@import 'beerlist';
+@import 'beer';
 
 * {
   box-sizing: border-box;
@@ -8,8 +11,21 @@
 
 body {
   text-align: center;
-  background-color: rgba(23, 59, 98, 1);
+  background-color: rgb(247, 240, 226);
   color: $white;
+}
+
+header {
+  background: rgb(112, 10, 10);
+  color: $white;
+  margin-bottom: 30px;
+  min-height: 15vh;
+  vertical-align: middle;
+  
+  h1 {
+    line-height: 15vh;
+    height: 100%;
+  }
 }
 
 #app {
@@ -19,28 +35,3 @@ body {
   color: $black;
 }
 
-.beer {
-  padding: 15px;
-  box-shadow: 2px 2px 10px 0px rgba(150, 150, 150, .4);
-  background-color: $white;
-  margin: 30px;
-  border-radius: 3px;
-}
-
-.beer-info {
-  float: left;
-}
-
-.beer-pic {
-  max-height: 150px;
-}
-
-.pic-koozie {
-  width: 20vh;
-  float: right;
-  text-align: center;
-}
-
-.clearfix {
-  clear: both;
-}

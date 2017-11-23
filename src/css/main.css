@@ -49,9 +49,8 @@ table {
 h1 {
   font-family: 'Holtwood One SC', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 3rem;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin: auto; }
+  margin: auto;
+  letter-spacing: 3px; }
 
 h2, h3, h4, p, small {
   font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -60,19 +59,13 @@ h2 {
   font-size: 2rem;
   margin-bottom: 10px; }
 
-* {
-  box-sizing: border-box; }
+.search-wrapper {
+  text-align: center; }
 
-body {
-  text-align: center;
-  background-color: #173b62;
-  color: #FFF; }
-
-#app {
-  max-width: 80vw;
-  margin: auto;
-  text-align: left;
-  color: #111; }
+.search {
+  width: 80%;
+  font-size: 1.5rem;
+  margin: auto; }
 
 .beer {
   padding: 15px;
@@ -94,5 +87,29 @@ body {
 
 .clearfix {
   clear: both; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  text-align: center;
+  background-color: #f7f0e2;
+  color: #FFF; }
+
+header {
+  background: #700a0a;
+  color: #FFF;
+  margin-bottom: 30px;
+  min-height: 15vh;
+  vertical-align: middle; }
+  header h1 {
+    line-height: 15vh;
+    height: 100%; }
+
+#app {
+  max-width: 80vw;
+  margin: auto;
+  text-align: left;
+  color: #111; }
 
 /*# sourceMappingURL=main.css.map */
